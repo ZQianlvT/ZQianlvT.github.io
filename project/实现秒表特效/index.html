@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实现秒表特效</title>
+	<style>
+		#clockbg{
+			background: #000;
+			width: 200px;
+			height: 50px;
+			border-radius: 20px;
+			color:#0f0;
+			text-align: center;
+			line-height: 50px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div id="clockbg">
+		<span id="clock">10:00:00</span>
+	</div>
+</body>
+<script>
+	cobj=document.getElementById("clock");
+	function ptTime(){
+		dobj=new Date();
+		hour=dobj.getHours();
+		minute=dobj.getMinutes();
+		second=dobj.getSeconds();
+		if(hour<10)
+			hour="0"+hour;
+		if(minute<10)
+			minute="0"+minute;
+		if(second<10)
+			second="0"+second;
+		str=hour+":"+minute+":"+second;
+		cobj.innerHTML=str;
+	}
+	ptTime();
+	setInterval(ptTime,1000);
+</script>
+</html>
