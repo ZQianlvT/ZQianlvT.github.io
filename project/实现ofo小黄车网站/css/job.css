@@ -1,0 +1,37 @@
+.job_t{
+    background: url(../img/job/banner.jpg) no-repeat top center;
+    width: 100%;
+    height: 780px;
+}
+.job_b div{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.job_b li{
+    vertical-align: top;
+    display: inline-block;
+    width: 15%;
+}
+.job_b h3{
+    margin-bottom: 25px;
+}
+.job_b span{
+    color: #b8b8b8;
+    line-height: 24px;
+    font-size: 14px;
+}
+.job_b span:hover{
+    cursor: pointer;
+    color: black;
+}
+.job_b button{
+    width: 140px;
+    height: 60px;
+    border: 1px solid #e5e5e5;
+    border-radius: 30px;
+    background: white;
+}
+.job_b button:hover{
+    background: orange;
+}

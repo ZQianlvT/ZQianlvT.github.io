@@ -1,0 +1,43 @@
+#top {
+    position: relative;
+    z-index: -1;
+    text-align: center;
+}
+
+#top img {
+    width: 100%;
+}
+
+#top span {
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+#b_t button {
+    display: block;
+    border: 1px;
+    border-radius: 40px;
+    background: #ffbc00;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    margin: 50px auto 50px;
+}
+
+#b_b {
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 50px;
+    color: #8d8d8d;
+}
+
+#b_b h3 {
+    display: block;
+    color: #666666;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 20px auto;
+}

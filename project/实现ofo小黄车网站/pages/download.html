@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下载APP</title>
+    <style>
+        @import "../css/haf.css";
+        @import "../css/download.css";
+    </style>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<header>
+    <div id="nav">
+        <div id="logo">
+            <a href="../index.html" class="demo1"><img src="../img/index/logo.png" alt="logo"/></a>
+        </div>
+        <div id="nav-list">
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../pages/about.html">关于我们</a></li>
+                <li><a href="../pages/download.html" style="color:#f7d408;">下载APP</a></li>
+                <li><a href="../pages/job.html">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<section>
+    <div id="main">
+        <div id="blur">
+            <div id="phone"></div>
+            <div id="qrcode"></div>
+        </div>
+        <div id="step">
+            <h3>使用方法</h3>
+            <ul>
+                <li>
+                    <img src="../img/download/steps1.jpg"/>
+                    <h4>① 扫码开锁</h4>
+                    <p>使用手机App 或支付宝小程序，点击【扫码用车】按钮，扫描车锁上的二维码</p>
+                </li>
+                <li>
+                    <img src="../img/download/steps2.jpg"/>
+                    <h4>② 输入车牌开锁</h4>
+                    <p>在车锁上输入 App显示的密码即可开锁，如果你使用的是机械锁，则可以拨动拨盘密码开锁</p>
+                </li>
+                <li>
+                    <img src="../img/download/steps3.jpg"/>
+                    <h4>③ 如何停放</h4>
+                    <p>结束用车后，请将车停放至道路两旁安全区域，同时记得关闭车锁</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer>
+    <div id="footer">
+        <div id="footer_t">
+            <div><img src="../img/index/footer_logo.png"></div>
+            <br/>
+            <div><img src="../img/index/cert.png"></div>
+            <br/>
+            <div><p>4001 507 507（周一至周日：早7:00 - 次日凌晨1:00）</p>
+                <p>北京市海淀区北四环西路58号理想国际大厦11层</p>
+            </div>
+        </div>
+        <div id="footer_b">
+            <p>Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;公共事务邮箱
+                gr@ofo.so 商务合作邮箱 bdinchina@ofo.so</p>
+        </div>
+    </div>
+</footer>
+</body>
+<script>
+    $(window).scroll(function () {
+        if($(window).scrollTop()>300){
+            $("div#step ul").fadeIn(1000);
+        }
+    });
+</script>
+</html>

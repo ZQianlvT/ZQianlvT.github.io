@@ -1,0 +1,87 @@
+#home_t {
+    text-align: center;
+}
+
+#home_bg_div1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+#home_bg_img1 {
+    position: relative;
+    z-index: -1;
+    width: 400%;
+}
+
+#img_bt {
+    position: relative;
+    bottom: 30px;
+    cursor: default;
+}
+
+#img_bt span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 5px;
+}
+
+#img_bt span:hover {
+    cursor: pointer;
+    border: 2px solid #f7d408;
+}
+
+#img_bt span:first-child {
+    background: #f7d408;
+}
+
+#home_f {
+
+    background: palegoldenrod;
+    margin-top: -21px;
+    text-align: center;
+}
+
+#home_img_list div {
+    position: relative;
+    width: 33%;
+    display: inline-block;
+}
+
+#home_img_list span {
+    color: rgba(256, 256, 256, 0.9);
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+#home_img_list img {
+    width: 100%;
+    height: 100%;
+}
+
+#home_img_list a {
+    text-decoration: none;
+}
+
+#home_img_list button {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 108px;
+    height: 34px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0);
+    color: rgba(256, 256, 256, 0.9);
+    border: 1.5px solid white;
+}
+
+#home_img_list button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+body {
+    background: #f5f5f5;
+}
+
+.clear {
+    clear: both;
+}
+
+.act_t {
+    background: url(../img/activity/banner.jpg) no-repeat top center;
+    height: 780px;
+}
+
+.act_b {
+    width: 830px;
+    margin: 100px auto;
+}
+
+.act_list {
+    float: left;
+    margin-bottom: 30px;
+    background: white;
+    width: 400px;
+    height: 600px;
+}
+
+.act_list:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 6px #ccc;
+}
+
+.act_list img {
+    width: 100%;
+    height: 280px;
+}
+
+.act_list > div {
+    margin: 30px 30px;
+}
+
+.act_list span {
+    color: #707070;
+    font-size: 14px;
+}
+
+.act_list h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333333;
+    font-weight: 500;
+    font-size: 24px;
+}
