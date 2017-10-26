@@ -1,3 +1,6 @@
+section{
+    min-width: 950px;
+}
 #home_t {
     text-align: center;
 }
@@ -43,7 +46,6 @@
     margin-top: -21px;
     text-align: center;
 }
-
 #home_img_list div {
     position: relative;
     width: 33%;
