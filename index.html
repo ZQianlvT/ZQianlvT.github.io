@@ -9,36 +9,44 @@
 		body{
 			background: #333;
 		}
-		.navbar-right{
-			margin-right: 10px;
-		}
 		.jumbotron{
-			margin :auto auto;
-			height: 500px;
+			margin-top: 15px;
 		}
 	</style>
 </head>
 <body>
 
 <div class="container">
-	<div class="jumbotron">
+	<div class="jumbotron clearfix">
 		<nav class="navbar navbar-inverse">
-				<ul class="nav navbar-nav">
-					<li><a href="index.html">个人主页</a></li>
-				</ul>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mycollapse">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">个人主页</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mycollapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="pages/mindMaps.html">知识梳理</a></li>
 					<li><a href="pages/developmentManual.html">API手册</a></li>
 					<li><a href="pages/project.html">练习项目</a></li>
 				</ul>
+			</div>
 		</nav>
-		<div class="col-md-8 col-md-offset-2">
-		<h1 class="text-center">除了自己的无知，</h1>
-		<h1 class="text-center">我什么都不懂。</h1>
-		<h3 class="text-right">－苏格拉底</h3>
+		<div class="col-md-8 col-md-offset-2 text-center">
+			<p>不乱于心，不困于情。不畏将来，不念过往。如此，安好!</p>
+			<p>深谋若谷，深交若水。深明大义，深悉小节。已然，静舒!</p>
+			<p>善宽以怀，善感以恩。善博以浪，善精以业。这般，最佳!</p>
+			<p>勿感于时，勿伤于怀。勿耽美色，勿沉虚妄。从今，进取!</p>
+			<p>无愧于天，无愧于地。无怍于人，无惧于鬼。这样，人生!</p>
+			<p class="text-right" style="font-size: 15px">--丰子恺</p>
 		</div>
 	</div>
 </div>
+<script src="jQuery/jquery-3.2.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
