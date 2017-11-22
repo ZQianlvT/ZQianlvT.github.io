@@ -3,19 +3,42 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>朱擎天个人主页</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style>
+		body{
+			background: #333;
+		}
+		.navbar-right{
+			margin-right: 10px;
+		}
+		.jumbotron{
+			margin :auto auto;
+			height: 500px;
+		}
+	</style>
 </head>
 <body>
-<div class="main">
-	<header>
-		<nav>
-				<a href="index.html">首页</a>
-				<a href="pages/mindMaps.html">知识梳理</a>
-				<a href="pages/developmentManual.html">API手册</a>
-				<a href="pages/project.html">练习项目</a>
+
+<div class="container">
+	<div class="jumbotron">
+		<nav class="navbar navbar-inverse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">个人主页</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="pages/mindMaps.html">知识梳理</a></li>
+					<li><a href="pages/developmentManual.html">API手册</a></li>
+					<li><a href="pages/project.html">练习项目</a></li>
+				</ul>
 		</nav>
-	</header>
-	<caption></caption>
-	<footer></footer>
+		<div class="col-md-8 col-md-offset-2">
+		<h1 class="text-center">除了自己的无知，</h1>
+		<h1 class="text-center">我什么都不懂。</h1>
+		<h3 class="text-right">－苏格拉底</h3>
+		</div>
+	</div>
 </div>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
