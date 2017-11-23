@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>朱擎天个人主页-练习项目页面</title>
+    <meta charset="UTF-8">
+    <title>练习项目</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        body {
+            background: #333;
+        }
+
+        .jumbotron {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
-<div class="main">
-	<header>
-		<nav>
-				<a href="../index.html">首页</a>
-				<a href="../pages/mindMaps.html">知识梳理</a>
-				<a href="../pages/developmentManual.html">API手册</a>
-				<a href="project.html">练习项目</a>
-		</nav>
-	</header>
-	<caption>
-		<ul>
-				<li><a href="../project/令两个div块居中/index.html">令两个div块居中</a></li>
-				<li><a href="../project/打印九九乘法表/index.html">打印九九乘法表</a></li>
-			<li><a href="../project/实现延时跳转页面特效/index.html">实现延时跳转页面特效</a></li>
-				<li><a href="../project/实现秒表特效/index.html">实现秒表特效</a></li>
-				<li><a href="../project/控制图片移动/index.html">控制图片移动</a></li>
-				<li><a href="../project/实现弹力球特效/index.html">实现弹力球特效</a></li>
-				<li><a href="../project/实现回到顶部特效/index.html">实现回到顶部特效</a></li>
-				<li><a href="../project/移入移出改变背景色特效/index.html">移入移出改变背景色特效</a></li>
-				<li><a href="../project/单击循环改变背景色特效/index.html">单击循环改变背景色特效</a></li>
-				<li><a href="../project/实现ofo小黄车网站/index.html">实现ofo小黄车网站</a></li>
-				<li><a href="../project/实现新疆行知书首页/index.html">实现新疆行知书首页</a></li>
-			</li>
-		</ul>
-	</caption>
-	<footer></footer>
-</div>	
+<div class="container">
+    <div class="jumbotron">
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mycollapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">个人主页</a>
+            </div>
+            <div class="collapse navbar-collapse" id="mycollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../pages/mindMaps.html">知识梳理</a></li>
+                    <li><a href="../pages/developmentManual.html">API手册</a></li>
+                    <li class="active"><a href="project.html">练习项目</a></li>
+                    <li><a href="../pages/theirThoughts.html">滚滚红尘里有我</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="panel panel-default">
+            <div class="panel-heading">网页项目</div>
+            <div class="list-group">
+                <a href="../project/实现新疆行知书首页/index.html" class="list-group-item">实现新疆行知书首页</a>
+                <a href="../project/实现ofo小黄车网站/index.html" class="list-group-item">实现静态ofo小黄车网站</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../jQuery/jquery-3.2.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

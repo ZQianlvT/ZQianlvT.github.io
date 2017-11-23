@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8"/>
-	<title>朱擎天个人主页-知识梳理页面</title>
+    <meta charset="UTF-8"/>
+    <title>知识梳理</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        body {
+            background: #333;
+        }
+
+        .jumbotron {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
-<div class="main">
-	<header>
-		<nav>
-				<a href="../index.html">首页</a>
-				<a href="mindMaps.html">知识梳理</a>
-				<a href="../pages/developmentManual.html">API手册</a>
-				<a href="../pages/project.html">练习项目</a>
-		</nav>
-	</header>
-	<caption>
-		<ul>
-			<li><a href="../image/They think.png">They think</a></li>
-			<li><a href="../image/Vim.png">Vim知识梳理</a></li>
-			<li><a href="../image/Sublime.png">Sublime编辑器知识梳理</a></li>
-			<li><a href="../image/webstorm.png">webstorm编辑器知识梳理</a></li>
-			<li><a href="../image/HTML.png">HTML知识梳理</a></li>
-			<li><a href="../image/CSS.png">CSS知识梳理</a></li>
-			<li><a href="../image/JavaScript.png">JavaScript知识梳理</a></li>
-			<li><a href="../image/jQuery.png">jQuery知识梳理</a></li>
-			<li><a href="../image/Bootstrap.png">Bootstrap知识梳理</a></li>
-		</ul>
-	</caption>
-	<footer></footer>
+<div class="container">
+    <div class="jumbotron">
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mycollapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">个人主页</a>
+            </div>
+            <div class="collapse navbar-collapse" id="mycollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="mindMaps.html">知识梳理</a></li>
+                    <li><a href="../pages/developmentManual.html">API手册</a></li>
+                    <li><a href="../pages/project.html">练习项目</a></li>
+                    <li><a href="../pages/theirThoughts.html">滚滚红尘里有我</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="panel panel-default">
+            <div class="panel-heading">语言</div>
+            <div class="list-group">
+                <a href="../images/HTML.png" class="list-group-item">HTML知识梳理</a>
+                <a href="../images/CSS.png" class="list-group-item">CSS知识梳理</a>
+                <a href="../images/JavaScript.png" class="list-group-item">JavaScript知识梳理</a>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">框架</div>
+            <div class="list-group">
+                <a href="../images/jQuery.png" class="list-group-item">jQuery知识梳理</a>
+                <a href="../images/Bootstrap.png" class="list-group-item">Bootstrap知识梳理</a>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">编辑器</div>
+            <div class="list-group">
+                <a href="../images/Sublime.png" class="list-group-item">Sublime编辑器知识梳理</a>
+                <a href="../images/webstorm.png" class="list-group-item">webstorm编辑器知识梳理</a>
+                <a href="../images/Vim.png" class="list-group-item">Vim知识梳理</a>
+            </div>
+        </div>
+    </div>
 </div>
+<script src="../jQuery/jquery-3.2.1.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
