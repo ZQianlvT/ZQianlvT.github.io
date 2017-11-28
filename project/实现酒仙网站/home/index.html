@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酒仙网首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        body {
+            background: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #666666;
+        }
+
+        .main {
+            width: 1200px;
+            margin: 0 auto;
+            line-height: 26px;
+            color: #666666;
+        }
+
+        .top {
+            height: 26px;
+            background: #f2f2f2;
+        }
+
+        .main-left {
+            float: left;
+        }
+
+        .main-left span, .main-left a {
+            margin-right: 5px;
+        }
+
+        .main-right {
+            float: right;
+        }
+
+        .main-right span, .main-right a {
+            margin-left: 5px;
+        }
+
+        .main-right .c00 {
+            color: #c00;
+        }
+
+        .main-right .jiuxian {
+            float: left;
+            width: 67px;
+            padding-left: 15px;
+        }
+
+        .main-right .jiuxian .mydropdown {
+            float: left;
+            display: none;
+        }
+
+        .main-right .jiuxian .mydropdown a {
+            margin-left: 0;
+        }
+
+        .main-right .jiuxian .mydropdown ul {
+            list-style: none;
+        }
+
+        .main-right .myjiu {
+            width: 15px;
+            height: 15px;
+            padding-left: 15px;
+            background: url('public/images/public-24.png') no-repeat -99px 7px;
+        }
+
+        .main-right .cart {
+            width: 15px;
+            height: 15px;
+            padding-left: 15px;
+            background: url('public/images/public-24.png') no-repeat -18px 4px;
+        }
+
+        .main-right .shouji {
+            background: #c00;
+            color: #ffffff;
+            padding: 0 5px;
+            border-radius: 3px;
+        }
+
+        .main-right .shouji .pre {
+            width: 15px;
+            height: 15px;
+            padding-left: 15px;
+            background: url('public/images/public-24.png') no-repeat -62px 2px;
+        }
+
+        .main-right .web {
+            width: 15px;
+            height: 15px;
+            padding-left: 15px;
+            background: url('public/images/public-24.png') no-repeat -80px 3px;
+        }
+
+        .main-right .kefu {
+            width: 15px;
+            height: 15px;
+            padding-left: 15px;
+            background: url('public/images/public-24.png') no-repeat -90px -262px;
+        }
+
+        .banner {
+            min-width: 1200px;
+            height: 90px;
+            background: url("public/images/5c0d6f76569a48308a04929e2396d496.jpg") no-repeat top center scroll;
+        }
+    </style>
+    <script src="../public/js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="main">
+        <div class="main-left">
+            <span>欢迎来酒仙网！</span>
+            <a href="">请登录</a>
+            <a href="">免费注册</a>
+        </div>
+        <div class="main-right">
+            <div class="jiuxian">
+                我的酒仙&nbsp<i class="myjiu"></i>
+                <div class="mydropdown">
+                    <ul>
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">物流跟踪</a></li>
+                        <li><a href="">我的优惠</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="" class="c00">CEO邮箱</a>
+            <a href=""><i class="cart"></i>购物车0件</a>
+            <a href="">社区</a>
+            <a href="" class="shouji"><i class="pre"></i>手机逛酒仙</a>
+            <a href="">体验店加盟</a>
+            <a href=""><i class="web"></i>网站导航</a>
+            <a href=""><i class="kefu"></i>客户服务</a>
+            <span>客服热线 : <span class="c00">400-617-9999</span></span>
+        </div>
+    </div>
+
+</div>
+<div class="banner"></div>
+</body>
+<script>
+    $('.main-right .jiuxian').hover(
+        function () {
+            $(this).css({'background': '#fff'});
+            $(this).find('.mydropdown').show();
+        },
+        function () {
+            $(this).css({'background': '#f2f2f2'});
+            $(this).find('.mydropdown').hide();
+        });
+</script>
+</html>
