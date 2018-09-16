@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>learnUnlayer</title>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="https://editor.unlayer.com/embed.js"></script>
+
+</head>
+<body>
+		<div><span>React Email Editor (Demo)</span><button id="load">load Design</button><button id="save">Save Design</button><button id="export">Export HTML</button></div>
+<div id="editor-container"  style="height: 80vh"></div>
+<script>
+	unlayer.init({
+	  id: 'editor-container',
+	  projectId: 1366,
+	  templateId: 3931,
+	  user: {
+	    id: 1370, // User ID - Required
+	    name: "OrionPax", // Full Name - Optional
+    	email: "qingtian.zhu@eventslack.com" // Email - Optional
+	  }
+	})
+
+
+	$("#save").click(function(){
+	  unlayer.saveDesign(function(design) {
+	  console.log('design', design);
+	});
+	$("#export").click(function(){
+	  unlayer.exportHtml(function(data) {
+	  	alert(1);
+	  var json = data.design; // design json
+	  var html = data.html; // final html
+
+	  // Do something with the json and html
+	})
+	});
+
+  })
+	</script>
+</body>
+</html>
